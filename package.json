@@ -1,20 +1,17 @@
 {
-  "name": "node21-static-site",
+  "name": "discord-bot-dashboard",
   "version": "1.0.0",
-  "description": "Node.js 21 で動く静的ファイルサーバーと簡単なWebサイト",
-  "main": "server.js",
+  "type": "module",
   "scripts": {
-    "start": "node server.js"
+    "start": "node web/server.js"
   },
-  "keywords": [
-    "nodejs",
-    "static",
-    "web",
-    "server"
-  ],
-  "author": "Your Name",
-  "license": "MIT",
-  "engines": {
-    "node": ">=21"
+  "dependencies": {
+    "discord.js": "^14.11.0",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "lowdb": "^6.0.1",
+    "node-fetch": "^3.3.2"
   }
 }
