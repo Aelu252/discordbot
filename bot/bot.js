@@ -6,9 +6,10 @@ import { JSONFile } from "lowdb/node";
 dotenv.config();
 
 const adapter = new JSONFile("database.json");
-const db = new Low(adapter);
+const db = new Low(adapter, { guilds: {} });  // ← ここを変更
 await db.read();
 db.data ||= { guilds: {} };
+await db.write();
 
 const bot = new Client({
   intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages],
