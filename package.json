@@ -1,0 +1,20 @@
+{
+  "name": "node21-static-site",
+  "version": "1.0.0",
+  "description": "Node.js 21 で動く静的ファイルサーバーと簡単なWebサイト",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "static",
+    "web",
+    "server"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "engines": {
+    "node": ">=21"
+  }
+}
