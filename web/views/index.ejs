@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>Discord Bot 管理パネル</title>
+</head>
+<body>
+  <h1>管理パネル付きBot</h1>
+  <% if (!user) { %>
+  <a href="/login">Discordでログイン</a>
+  <% } else { %>
+  <p>ようこそ、<%= user.username %> さん！</p>
+  <a href="/dashboard">ダッシュボードへ</a>
+  <% } %>
+</body>
+</html>
